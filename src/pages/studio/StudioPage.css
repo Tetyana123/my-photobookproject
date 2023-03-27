@@ -1,0 +1,105 @@
+.studio-page {
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding: 50px;
+}
+
+.headline-header {
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+  border-bottom: 1px solid rgb(222, 226, 230) !important;
+  box-shadow: rgba(0, 0, 0, 0.075) 0px 0.125rem 0.25rem !important;
+}
+
+@media (max-width: 350px) {
+  .studio-page {
+    padding: 50px 20px;
+  }
+}
+
+.price-chekout {
+text-align: right;
+/* padding: 30px 100px; */
+font-family: 'Times New Roman', Times, serif;
+}
+
+#price-checkout{
+  display: inline-block;
+  font-size: 50px;
+  font-weight: bold ;
+  margin: 30px 30px 50px 30px;
+  }
+
+#checkout-button{
+    display: inline-block;
+    font-size: 30px;
+    margin: 30px 30px 50px 30px;
+    background-color: rgb(0, 191, 255);
+    border-radius: 20px;
+    padding: 5px 30px;
+    cursor: pointer;
+    }
+
+.list-option{
+  text-align: left;
+}
+
+
+.list li{
+  display: inline-block;
+  font-size: 40px;
+  padding: 10px 50px 10px 50px;
+  text-decoration: none;
+  /* color: black;*/
+}
+
+.list a:link{
+  text-decoration: none;
+  color: black; 
+}
+
+.list a:hover{
+  color: rgb(0, 191, 255);
+  font-weight: bold;
+}
+
+.list a{
+  color:black;
+  font-family: 'Times New Roman', Times, serif; 
+}
+
+.apply-cover-form {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.cover-by-photos{
+  display: inline-block;
+  border: 2px solid black;
+  background-color: white;
+  box-sizing: border-box;
+  width: 70%;
+  min-height: 70vh;
+  margin: 0px 50px 0px 50px;
+}
+
+.cover-page{
+  background-color: rgb(0, 191, 255);
+  border: 2px solid black;
+  box-sizing: border-box;
+  text-align: center;
+  min-height: 50vh;
+  height: auto;
+  width: 80%; 
+  margin: auto;
+  margin-top: 10vh;
+}
+
+.option-photocover{
+  display: inline-block;
+  margin-right: 50px;
+  margin-left: 50px;
+}

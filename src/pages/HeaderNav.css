@@ -1,0 +1,88 @@
+#navar-brand {
+    font-size: 30px;
+   
+   
+}
+
+.nav-link {
+    font-size: 25px;
+    color: rgb(39, 38, 38);
+    margin-left: 20px;
+    text-transform: capitalize;
+    max-height:  40px;
+}
+
+.pages-navbar {
+    position: flex; 
+    margin: auto;
+}
+
+#button-sign{
+    color:rgb(255, 69, 0);
+    text-transform: capitalize;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    border: 2px solid rgb(255, 69, 0);
+    border-radius: 30px;
+    font-size: 25px;
+    padding: 5px 30px;
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 10px;
+  }
+  
+#button-sign:hover{
+    color: white;
+    background-color:rgb(255, 69, 0);
+  }
+
+#button-login{
+    background-color:rgb(255, 69, 0);
+    color:white;
+    text-transform: capitalize;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    border: 2px solid rgb(255, 69, 0);
+    border-radius: 30px;
+    font-size: 25px;
+    padding: 5px 30px;
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 10px;
+  }
+
+#button-login:hover{
+    
+    background-color:white;
+  }
+
+
+#button-sign a:link{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#button-login a:link{
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+#button-login a{
+    color:white;
+    font-family: 'Times New Roman', Times, serif; 
+  }
+
+#button-sign a{
+    color:rgb(255, 69, 0);
+    font-family: 'Times New Roman', Times, serif; 
+  }
+
+  #button-sign a:hover{
+    color:white;
+   
+  }
+
+  #button-login a:hover{
+    color:rgb(255, 69, 0);
+    
+  }

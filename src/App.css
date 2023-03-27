@@ -1,116 +1,14 @@
 html {
-  height: 100%;
+    height: 100%;
   }
-  
-body {
     
+  body {
     min-height: 100%;
     padding: 0;
-    }
-
-
-
-.App {
-  min-width: 100%;
-  min-height: 100%;
-  padding: 0;
-    
- box-sizing: border-box;
- text-align: center;
-  background-size: cover;
-  padding: 50px;
-  background-image: url('./images/album.jpg');
-   }
-
-
-/* .Background {
-  text-align: center;
-  background-size: cover;
-  padding: 50px;
-   } */
-
-   
-h1.Headline {
-text-align: left;
-text-transform: uppercase;
-font-weight: bold;
-/* font-size:5vw; */
-font-family: 'Times New Roman', Times, serif;
-   }
-
-  h1.Subtitle {
-   margin-top: 50px;
-    /* font-size:4vw; */
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    text-shadow: 5px 5px 10px rgb(0, 191, 255);
-    }
-
-   @media (min-width: 1200px){
-    h1.Headline, h1.Subtitle {
-      font-size: 60px;
-     }
-     a.Button-link {
-      font-size: 50px;
-      padding: 10px 40px;
-     }
-   }
-
-   @media (min-width: 992px){
-    h1.Headline, h1.Subtitle {
-      font-size: 40px;
-     }
-     a.Button-link {
-      font-size: 30px;
-      padding: 10px 30px;
-     }
-   }
-
-
-   @media (max-width: 768px) { 
-    h1.Headline, h1.Subtitle {
-    font-size: 30px;
-   }
-   a.Button-link {
-    font-size: 20px;
-    padding: 10px 20px;
-   }
   }
-
-  @media (max-width: 480px) {
-    h1.Headline, h1.Subtitle {
-      font-size: 20px;
-     }
-     a.Button-link {
-      font-size: 10px;
-      padding: 10px 10px;
-     }
+  
+  .app {
+    min-height: 100vh;
+    box-sizing: border-box;
   }
-
-   /* @media (min-width: 320px) {
-    h1.Headline {
-      font-size: 10px;
-     }
-  }  */
-
-
-
-.Link {
-margin-top: 50px;
-
-}
-a.Button-link {
-  background-color: rgb(0, 191, 255);
-  color: black;
-  text-decoration: none;
-  text-align: center;
-  font-family: 'Times New Roman', Times, serif;
-  border: 2px solid black;
-  border-radius: 15px;
-  /* margin-top: 20%; */
-}
-a:hover.Button-link {
-  color: white;
-}
-
-
-
+  
