@@ -48,7 +48,7 @@ function StudioPage() {
                          </Form.Text> */}
                      </Form.Group>
 
-                     <Form.Group  >
+                     <Form.Group>
                          <Form.Label className="size-title">Subtitle</Form.Label>
                          <Form.Control type="text" placeholder="Subtitle" />
                      </Form.Group>
