@@ -40,50 +40,33 @@ function StudioPage() {
 
                     <div className="option-photocover">
                     <Form>
-                     <Form.Group >
-                         <Form.Label className="size-title">Title</Form.Label>
+                     <Form.Group className="mb-3" >
+                         <Form.Label>Title</Form.Label>
                          <Form.Control type="text" placeholder="Title" />
                          {/* <Form.Text className="text-muted">
                           We'll never share your email with anyone else.
                          </Form.Text> */}
                      </Form.Group>
 
-                     <Form.Group  >
-                         <Form.Label className="size-title">Subtitle</Form.Label>
+                     <Form.Group className="mb-3" >
+                         <Form.Label>Subtitle</Form.Label>
                          <Form.Control type="text" placeholder="Subtitle" />
                      </Form.Group>
 
-                     <Form.Group >
-                         <Form.Label for="theme" className="size-title">Background color</Form.Label>
-
-                         {/* <select id="theme">
-                          <option value="blue">blue</option>
-                          <option value="yellow">yellow</option>
-                         </select>
-
-                        function update(bgColor, textColor) {
-                                 html.style.backgroundColor = bgColor;
-                                 html.style.color = textColor;
-                                     }
-
-                        select.onchange = function() {
-                              ( select.value === 'blue' ) ? update('blue','yellow') : update('yellow','blue');
-                                */}
-
+                     <Form.Group className="mb-3">
+                         <Form.Label for="theme">Background color</Form.Label>
+                         
                          <Form.Control type="text" placeholder="Background color" />
+                               
                      </Form.Group>
                      
                      <Form.Group className="mb-3">
-                     <Form.Label className="size-title">Size</Form.Label>
+                     <Form.Label>Size</Form.Label>
                          <Form.Select aria-label="Default select example">
                            <option>Open this select menu</option>
-                           <option value="1">9×13</option>
-                           <option value="2">10х15 (A6)</option>
-                           <option value="3">13×18  </option>
-                           <option value="3">15×21 (A5)</option>
-                           <option value="3">20×30 (A4)</option>
-                           <option value="3">30×40</option>
-                           <option value="3">30×45 (A3)</option>
+                           <option value="1">One</option>
+                           <option value="2">Two</option>
+                           <option value="3">Three</option>
                          </Form.Select>
                      </Form.Group>
 
