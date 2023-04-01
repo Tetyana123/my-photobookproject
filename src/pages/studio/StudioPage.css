@@ -74,26 +74,32 @@ font-family: 'Times New Roman', Times, serif;
 .apply-cover-form {
   width: 100%;
   min-height: 100vh;
+  margin: 0%;
 }
 
 .cover-by-photos {
   display: inline-block;
   background-color: #cccccc;
   box-sizing: border-box;
-  width: 70%;
+  width: 65%;
   min-height: 70vh;
   margin: 0px 50px 0px 50px;
+  /* display: flex; */
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  
 }
 
 .cover-page {
   background-color: rgb(0, 191, 255);
   box-sizing: border-box;
   text-align: center;
-  min-height: 50vh;
+  min-height: 60vh;
   height: auto;
-  width: 80%; 
+  width: 90%; 
   margin: auto;
-  margin-top: 10vh;
+  margin-top: 5vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -114,11 +120,16 @@ font-family: 'Times New Roman', Times, serif;
   display: inline-block;
   margin-right: 50px;
   margin-left: 50px;
+  /* display: flex; */
+  /* flex-direction: column; 
+  align-items: left;*/
+  justify-content: center; 
+  margin-top: auto;
   
 }
 
 .size-title  {
   font-size: 30px;
   font-family: 'Times New Roman', Times, serif;
-  margin-top: 25%;
+  margin-top: 5%;
 }

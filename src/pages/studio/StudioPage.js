@@ -43,7 +43,8 @@ function StudioPage({ onChange }) {
               <li><a href="#">2. Add pages</a></li>
             </ol>
           </div>
-
+          
+         
           <div className="apply-cover-form">
             <div className="cover-by-photos">
               <div className="cover-page" style={{backgroundColor: appContext.cover.backgroundColor}}>
@@ -56,7 +57,7 @@ function StudioPage({ onChange }) {
               <Form>
                 <Form.Group>
                   <Form.Label className="size-title">Title</Form.Label>
-                  <Form.Control
+                  <Form.Control          
                     type="text"
                     placeholder="Title"
                     value={appContext.cover.title}
