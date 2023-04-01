@@ -20,25 +20,25 @@ function HeaderMenu() {
             // style={{ maxHeight: '50px' }}
             
           >
-            <Nav.Link className="nav-link"  href="/">Home</Nav.Link>
-            <Nav.Link className="nav-link"  href="/">Pricing</Nav.Link>
+            <Nav.Link class="nav-link"  href="/">Home</Nav.Link>
+            <Nav.Link class="nav-link"  href="/">Pricing</Nav.Link>
             
           </Nav>
 
           <div id="button-sign">
-              <a 
+                <a 
                 href="#"
-              >
-                Sign up
-              </a>
+                >
+                   Sign up
+                </a>
           </div>
 
           <div id="button-login">
-              <a
-                href="#"
-              >
-                Login
-              </a>
+                <a
+                   href="#"
+                >
+                   Login
+                </a>
           </div>
 
 
