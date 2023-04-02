@@ -6,6 +6,7 @@ import MainPage from './pages/main/MainPage';
 import StudioPage from './pages/studio/StudioPage';
 import CheckoutPage from './pages/checkout/CheckoutPage';
 import AppContext from "./AppContext";
+// import Register from './pages/Register';
 
 function App() {
   const defaultContext = JSON.parse(localStorage.getItem('appContext')) || {
@@ -37,6 +38,12 @@ function App() {
       path: "/checkout",
       element: <CheckoutPage />,
     },
+    // {
+    //   path: "/Register",
+    //   element: <Register />,
+    // },
+
+
   ]);
 
   return (

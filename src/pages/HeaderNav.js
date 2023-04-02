@@ -6,7 +6,6 @@ import Navbar from 'react-bootstrap/Navbar';
 // import NavDropdown from 'react-bootstrap/NavDropdown';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './HeaderNav.css';
-import Register from './Register';
 
 function HeaderMenu() {
   return (
@@ -28,10 +27,9 @@ function HeaderMenu() {
 
           <div id="button-sign">
               <a 
-                href="#"
+                href='/Register'
               >
-                <Register/>
-                {/* Sign up */}
+                Sign up 
               </a>
           </div>
 
