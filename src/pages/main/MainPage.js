@@ -1,6 +1,7 @@
+import LinkButton from '../../components/link-button/LinkButton';
+
 import './MainPage.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 
 function MainPage() {
   return (
@@ -12,14 +13,7 @@ function MainPage() {
         <h2 className="subtitle">
           Here you can breathe new life <br/> into your favorite photos
         </h2>
-        <div className="link">
-          <a
-            className="button-link"
-            href="/studio"
-          >
-            Start creating
-          </a>
-        </div>
+        <LinkButton link="/studio">Start creating</LinkButton>
       </div>
     </div>
   );

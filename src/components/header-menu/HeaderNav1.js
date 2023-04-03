@@ -27,7 +27,7 @@ function HeaderMenu() {
 
           <div id="button-sign">
                 <a 
-                href="#"
+                href="../../pages#"
                 >
                    Sign up
                 </a>
@@ -35,7 +35,7 @@ function HeaderMenu() {
 
           <div id="button-login">
                 <a
-                   href="#"
+                   href="../../pages#"
                 >
                    Login
                 </a>

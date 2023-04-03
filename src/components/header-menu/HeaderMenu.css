@@ -86,3 +86,26 @@
     color:rgb(255, 69, 0);
     
   }
+
+.price-checkout {
+  text-align: right;
+  display: flex;
+  align-items: center;
+}
+
+.price-checkout-value {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+#checkout-button {
+  display: inline-block;
+  font-size: 20px;
+  margin: 30px 30px 50px 30px;
+  background-color: rgb(0, 191, 255);
+  border-radius: 20px;
+  padding: 5px 30px;
+  cursor: pointer;
+}
