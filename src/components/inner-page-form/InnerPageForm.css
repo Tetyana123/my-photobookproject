@@ -32,3 +32,38 @@
   background-image: url("../../images/layout_1.svg");
   background-size: cover;
 }
+
+.layout-button.layout-2 {
+  background-image: url("../../images/layout_2.svg");
+  background-size: cover;
+}
+
+.layout-button.layout-3 {
+  background-image: url("../../images/layout_3.svg");
+  background-size: cover;
+}
+
+.layout-button.layout-4 {
+  background-image: url("../../images/layout_4.svg");
+  background-size: cover;
+}
+
+.layout-button.layout-5 {
+  background-image: url("../../images/layout_5.svg");
+  background-size: cover;
+}
+
+.layout-button.layout-6 {
+  background-image: url("../../images/layout_6.svg");
+  background-size: cover;
+}
+
+.layout-button.layout-7 {
+  background-image: url("../../images/layout_7.svg");
+  background-size: cover;
+}
+
+.layout-button.layout-8 {
+  background-image: url("../../images/layout_8.svg");
+  background-size: cover;
+}

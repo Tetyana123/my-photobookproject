@@ -1,0 +1,44 @@
+.description {
+    position: relative;
+    display: flex;
+    flex: 1 1 auto;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#comments {
+    position: relative;
+    cursor: text;
+    transition: background-color .5s;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0px 0px 0px 1.5px #ffffff;
+    resize: none;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-style: italic;
+    font-size: 16px;
+    padding: 8px 10px;
+    text-align: center;
+}
+
+#comments:hover {
+    background-color: #F4F5F6;
+    box-shadow: 0px 0px 0px 1.5px  #F4F5F6;
+}
+
+.input-description {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding-left: inherit;
+    padding-right: inherit;
+    border-radius: 8px;
+    box-shadow: 0px 0px 0px 1.5px #F4F5F6;
+    border: none;
+}
