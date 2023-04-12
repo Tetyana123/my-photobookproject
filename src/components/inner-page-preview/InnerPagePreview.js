@@ -33,11 +33,6 @@ function InnerPagePreview({ page }) {
         <>
           <div className="flex-container"> 
             <div className="upload-photo1">
-              Upload a photo
-             <input className="upload-photo-input" type="file" />
-            </div>
-            <div className="upload-photo1">
-              Upload a photo
              <input className="upload-photo-input" type="file" />
             </div>
           </div> 

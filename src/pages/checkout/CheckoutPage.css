@@ -1,0 +1,22 @@
+.cover-title-checkout{
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    margin: 50px;
+}
+
+.checkout-form{
+    margin-left: 40px;
+    justify-content: center;
+    width: 50%;
+}
+
+.back-mainpage{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+
+.checkout{
+    margin-top: 30px;
+}
