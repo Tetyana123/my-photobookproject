@@ -5,8 +5,12 @@ import LinkButton from '../link-button/LinkButton';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './HeaderMenu.css';
 import logo from  "../../images/logo-removebg-preview.png";
+import { useContext } from 'react';
+import AppContext from '../../AppContext';
 
 function HeaderMenu() {
+  const appContext = useContext(AppContext);
+
   return (
     <Navbar expand="lg">
       <Container fluid>
@@ -15,7 +19,9 @@ function HeaderMenu() {
           My Photobook
         </Navbar.Brand>
         <div className="price-checkout">
-          <div className="price-checkout-value"> 550 Sek</div>
+          <div className="price-checkout-value">
+            Price = {500 + appContext.pages.length * 50} Sek
+          </div>
           <LinkButton link="/checkout">Checkout</LinkButton>
         </div>
         {/*<Navbar.Toggle aria-controls="navbarScroll" />

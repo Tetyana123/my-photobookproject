@@ -9,6 +9,7 @@
     margin-left: 40px;
     justify-content: center;
     width: 50%;
+    padding-bottom: 60px;
 }
 
 .back-mainpage{
@@ -19,4 +20,14 @@
 
 .checkout{
     margin-top: 30px;
+}
+
+.card-details {
+    margin-top: 15px;
+    display: flex;
+    gap: 20px;
+}
+
+.card-details-date{
+    display: block;
 }

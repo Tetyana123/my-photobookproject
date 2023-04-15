@@ -1,20 +1,31 @@
-import {useContext, useState} from 'react';
+import { useContext, useState, useEffect } from 'react';
+import luminance from 'color-luminance';
 import Form from 'react-bootstrap/Form';
 import HeaderMenu from '../../components/header-menu/HeaderMenu';
 import IconArrowRight from '../../components/icon-arrow-right/IconArrowRight';
 import IconArrowLeft from '../../components/icon-arrow-left/IconArrowLeft';
 import Button from '../../components/button/Button';
 import InnerPagePreview from '../../components/inner-page-preview/InnerPagePreview';
+import InnerPageForm from '../../components/inner-page-form/InnerPageForm';
 import AppContext from '../../AppContext';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './StudioPage.css';
-import InnerPageForm from "../../components/inner-page-form/InnerPageForm";
+
+function hexToRgb(hex) {
+  const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+  return result ? {
+    r: parseInt(result[1], 16),
+    g: parseInt(result[2], 16),
+    b: parseInt(result[3], 16)
+  } : null;
+}
 
 function StudioPage({ onChange }) {
   const appContext = useContext(AppContext);
 
   const [currentStep, setCurrentStep] = useState(0);
+  const [isDark, setIsDark] = useState(false);
 
   const handleChange = (field, value) => {
     onChange({
@@ -38,6 +49,8 @@ function StudioPage({ onChange }) {
 
   const addPage = (event) => {
     event.preventDefault();
+    const pagesCount = appContext.pages.length;
+
     onChange({
       ...appContext,
       pages: [
@@ -45,10 +58,13 @@ function StudioPage({ onChange }) {
         {
           layout: 0,
           backgroundColor: "#ffffff",
-          photo0: "",
+          textColor: "#333333",
+          photos: [],
         },
       ]
-    })
+    });
+
+    setCurrentStep(pagesCount + 1);
   }
 
   const nextPage = () => {
@@ -58,6 +74,14 @@ function StudioPage({ onChange }) {
   const previousPage = () => {
     setCurrentStep(currentStep - 1);
   }
+
+  useEffect(() => {
+    if (appContext.cover.backgroundColor) {
+      const rgb = hexToRgb(appContext.cover.backgroundColor);
+      const lum = luminance(rgb.r, rgb.g, rgb.b);
+      setIsDark(lum < 70);
+    }
+  }, [appContext.cover.backgroundColor])
 
   return (
     <div className="studio">
@@ -79,15 +103,21 @@ function StudioPage({ onChange }) {
                 </button>
                 {currentStep === 0 && (
                   <div
-                    className="cover-page"
-                    style={{backgroundColor: appContext.cover.backgroundColor}}
+                    className={`cover-page ${isDark ? 'dark' : ''}`}
+                    style={{
+                      backgroundColor: appContext.cover.backgroundColor,
+                      color: appContext.cover.textColor,
+                    }}
                   >
                     <div className="cover-title">{appContext.cover.title}</div>
                     <div className="cover-subtitle">{appContext.cover.subtitle}</div>
                   </div>
                 )}
                 {currentStep > 0 && (
-                  <InnerPagePreview page={appContext.pages[currentStep - 1]} />
+                  <InnerPagePreview
+                    page={appContext.pages[currentStep - 1]}
+                    onChange={(changedPage) => handlePageChange(changedPage)}
+                  />
                 )}
                 <button
                   className={currentStep === appContext.pages.length ? "arrow-right disabled" : "arrow-right"}
@@ -130,6 +160,16 @@ function StudioPage({ onChange }) {
                         placeholder="Background color"
                         value={appContext.cover.backgroundColor}
                         onChange={(event) => handleChange('backgroundColor', event.target.value)}
+                      />
+                    </Form.Group>
+
+                    <Form.Group className="form-group">
+                      <Form.Label htmlFor="theme" className="size-title">Text color</Form.Label>
+                      <Form.Control
+                        type="color"
+                        placeholder="Text color"
+                        value={appContext.cover.textColor}
+                        onChange={(event) => handleChange('textColor', event.target.value)}
                       />
                     </Form.Group>
 

@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.3.4",
     "bootstrap": "^5.2.3",
+    "color-luminance": "^2.1.0",
     "lm-react-bootstrap-navbar": "^1.1.1",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.2",

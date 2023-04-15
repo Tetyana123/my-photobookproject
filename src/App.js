@@ -5,6 +5,7 @@ import './App.css';
 import MainPage from './pages/main/MainPage';
 import StudioPage from './pages/studio/StudioPage';
 import CheckoutPage from './pages/checkout/CheckoutPage';
+import CompletePage from './pages/order-confirmation/CompletePage';
 import AppContext from "./AppContext";
 // import Register from './pages/Register';
 
@@ -14,6 +15,7 @@ function App() {
       title: '',
       subtitle: '',
       backgroundColor: '#ffffff',
+      textColor: '#000000',
       size: '',
     },
     pages: [],
@@ -38,6 +40,11 @@ function App() {
       path: "/checkout",
       element: <CheckoutPage />,
     },
+    {
+      path: "/order-confirmation",
+      element: <CompletePage />,
+    },
+
     // {
     //   path: "/Register",
     //   element: <Register />,

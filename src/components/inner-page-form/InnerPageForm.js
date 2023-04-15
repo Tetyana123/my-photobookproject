@@ -80,6 +80,17 @@ function InnerPageForm({ page, onChange }) {
           onChange={(event) => handleChange('backgroundColor', event.target.value, event)}
         />
       </Form.Group>
+      {page.layout > 4 && (
+        <Form.Group className="form-group">
+          <Form.Label className="size-title">Text color</Form.Label>
+          <Form.Control
+            type="color"
+            placeholder="Text color"
+            value={page.textColor}
+            onChange={(event) => handleChange('textColor', event.target.value, event)}
+          />
+        </Form.Group>
+      )}
     </>
   );
 }
