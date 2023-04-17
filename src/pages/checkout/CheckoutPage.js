@@ -43,6 +43,7 @@ function CheckoutPage() {
     <div>
        <header className="headline-header">
          <HeaderMenu/>
+          {/* <HeaderMenu className={withoutCheckout}/> */}
        </header> 
 
        <main>

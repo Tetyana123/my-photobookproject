@@ -21,8 +21,6 @@ function CompletePage() {
             </div>
            </main>
         </div>
-
-
      );
      }
         
