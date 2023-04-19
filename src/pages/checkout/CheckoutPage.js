@@ -5,7 +5,7 @@ import Button from '../../components/button/Button';
 // import Button from 'react-bootstrap/Button';
 
 import AppContext from '../../AppContext';
-import HeaderMenu from '../../components/header-menu/HeaderMenu';
+import HeaderMenu1 from '../../components/header-menu/HeaderMenu1';
 import IconArrowLeft from '../../components/icon-arrow-left/IconArrowLeft';
 // import LinkButton from '../../components/link-button/LinkButton';
 
@@ -42,7 +42,7 @@ function CheckoutPage() {
   return (
     <div>
        <header className="headline-header">
-         <HeaderMenu/>
+         <HeaderMenu1/>
           {/* <HeaderMenu className={withoutCheckout}/> */}
        </header> 
 

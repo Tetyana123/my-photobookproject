@@ -87,7 +87,6 @@ function StudioPage({ onChange }) {
     <div className="studio">
       <header className="headline-header">
         <HeaderMenu/>
-       
       </header>
 
       <main>
