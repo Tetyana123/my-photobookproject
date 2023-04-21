@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-photobookproject/static/css/main.d2bd9af1.css",
-    "main.js": "/my-photobookproject/static/js/main.8888bea6.js",
+    "main.js": "/my-photobookproject/static/js/main.eeab85b4.js",
     "static/js/787.081b136b.chunk.js": "/my-photobookproject/static/js/787.081b136b.chunk.js",
     "static/media/album.jpg": "/my-photobookproject/static/media/album.f342c9dc80f379a957c4.jpg",
     "static/media/logo-removebg-preview.png": "/my-photobookproject/static/media/logo-removebg-preview.d624b4294d6526af79f4.png",
@@ -16,11 +16,11 @@
     "static/media/layout_0.svg": "/my-photobookproject/static/media/layout_0.c5a48da7b016f1a3abab.svg",
     "index.html": "/my-photobookproject/index.html",
     "main.d2bd9af1.css.map": "/my-photobookproject/static/css/main.d2bd9af1.css.map",
-    "main.8888bea6.js.map": "/my-photobookproject/static/js/main.8888bea6.js.map",
+    "main.eeab85b4.js.map": "/my-photobookproject/static/js/main.eeab85b4.js.map",
     "787.081b136b.chunk.js.map": "/my-photobookproject/static/js/787.081b136b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d2bd9af1.css",
-    "static/js/main.8888bea6.js"
+    "static/js/main.eeab85b4.js"
   ]
 }
