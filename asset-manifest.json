@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/my-photobookproject/static/css/main.d2bd9af1.css",
+    "main.js": "/my-photobookproject/static/js/main.8888bea6.js",
+    "static/js/787.081b136b.chunk.js": "/my-photobookproject/static/js/787.081b136b.chunk.js",
+    "static/media/album.jpg": "/my-photobookproject/static/media/album.f342c9dc80f379a957c4.jpg",
+    "static/media/logo-removebg-preview.png": "/my-photobookproject/static/media/logo-removebg-preview.d624b4294d6526af79f4.png",
+    "static/media/layout_8.svg": "/my-photobookproject/static/media/layout_8.7b2b44721ed60a6a7ee7.svg",
+    "static/media/layout_7.svg": "/my-photobookproject/static/media/layout_7.86d4dd379521a139c7fc.svg",
+    "static/media/layout_6.svg": "/my-photobookproject/static/media/layout_6.af5b73e80454ba23cd84.svg",
+    "static/media/layout_4.svg": "/my-photobookproject/static/media/layout_4.f4d9db6ebd0bb815b8e5.svg",
+    "static/media/layout_3.svg": "/my-photobookproject/static/media/layout_3.b932ef26183c1bad4bc5.svg",
+    "static/media/layout_2.svg": "/my-photobookproject/static/media/layout_2.5e2cadf93d5ee8fcc7f4.svg",
+    "static/media/layout_5.svg": "/my-photobookproject/static/media/layout_5.110df3d042d22e7b0f02.svg",
+    "static/media/layout_1.svg": "/my-photobookproject/static/media/layout_1.9994b2f41342defa78aa.svg",
+    "static/media/layout_0.svg": "/my-photobookproject/static/media/layout_0.c5a48da7b016f1a3abab.svg",
+    "index.html": "/my-photobookproject/index.html",
+    "main.d2bd9af1.css.map": "/my-photobookproject/static/css/main.d2bd9af1.css.map",
+    "main.8888bea6.js.map": "/my-photobookproject/static/js/main.8888bea6.js.map",
+    "787.081b136b.chunk.js.map": "/my-photobookproject/static/js/787.081b136b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d2bd9af1.css",
+    "static/js/main.8888bea6.js"
+  ]
+}
