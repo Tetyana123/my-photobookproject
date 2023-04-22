@@ -57,7 +57,7 @@ function StudioPage({ onChange }) {
   const addPage = (event) => {
     event.preventDefault();
     const pagesCount = appContext.pages.length;
-    const price = 500 + 50 * (pagesCount + 1);
+    const price = 500 + 20 * (pagesCount + 1);
 
     onChange({
       ...appContext,
@@ -79,7 +79,7 @@ function StudioPage({ onChange }) {
   const deletePage = (event) => {
     event.preventDefault();
     const pagesCount = appContext.pages.length;
-    const price = 500 + 50 * (pagesCount - 1);
+    const price = 500 + 20 * (pagesCount - 1);
 
     setCurrentStep(currentStep - 1);
     onChange({
