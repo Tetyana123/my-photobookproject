@@ -517,7 +517,7 @@ function InnerPagePreview({ page, onChange }) {
             </div>
           </div> 
         </>
-      )} 
+      )}
     </div>
   );
 }

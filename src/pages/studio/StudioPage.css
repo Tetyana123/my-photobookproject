@@ -167,6 +167,11 @@
   margin-bottom: 20px;
 }
 
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
 @media (max-width: 991px) {
   .container {
     flex-direction: column;
@@ -178,5 +183,11 @@
 
   .option-photocover {
     width: auto;
+  }
+}
+
+@media (max-width: 390px) {
+  .buttons {
+    flex-direction: column;
   }
 }

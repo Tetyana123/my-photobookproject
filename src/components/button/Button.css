@@ -13,6 +13,12 @@
   transition: color 250ms ease-in-out;
 }
 
+.button.small {
+  font-size: 15px;
+  padding: 6px 20px;
+  border-radius: 10px;
+}
+
 .button:hover {
   color: white;
 }

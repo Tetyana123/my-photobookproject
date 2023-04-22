@@ -20,6 +20,7 @@ function App() {
     },
     pages: [],
     size: '5',
+    price: 500,
   });
 
   useEffect( () => {

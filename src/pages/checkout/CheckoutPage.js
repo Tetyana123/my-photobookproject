@@ -3,18 +3,11 @@ import { Link } from 'react-router-dom';
 import localforage from "localforage";
 import Form from 'react-bootstrap/Form';
 import Button from '../../components/button/Button';
-// import Button from 'react-bootstrap/Button';
-
 import AppContext from '../../AppContext';
 import HeaderMenu1 from '../../components/header-menu/HeaderMenu1';
 import IconArrowLeft from '../../components/icon-arrow-left/IconArrowLeft';
-// import LinkButton from '../../components/link-button/LinkButton';
-
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './CheckoutPage.css';
-
-
 
 function CheckoutPage() {
   const appContext = useContext(AppContext);
@@ -36,6 +29,7 @@ function CheckoutPage() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    sessionStorage.setItem('price', appContext.price);
     localforage.removeItem('appContext');
     window.location.href = '/order-confirmation';
   }
@@ -43,8 +37,7 @@ function CheckoutPage() {
   return (
     <div>
        <header className="headline-header">
-         <HeaderMenu1/>
-          {/* <HeaderMenu className={withoutCheckout}/> */}
+         <HeaderMenu1 price={appContext.price} />
        </header> 
 
        <main>

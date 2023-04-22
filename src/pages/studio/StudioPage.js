@@ -57,6 +57,7 @@ function StudioPage({ onChange }) {
   const addPage = (event) => {
     event.preventDefault();
     const pagesCount = appContext.pages.length;
+    const price = 500 + 50 * (pagesCount + 1);
 
     onChange({
       ...appContext,
@@ -68,10 +69,24 @@ function StudioPage({ onChange }) {
           textColor: "#333333",
           photos: [],
         },
-      ]
+      ],
+      price,
     });
 
     setCurrentStep(pagesCount + 1);
+  }
+
+  const deletePage = (event) => {
+    event.preventDefault();
+    const pagesCount = appContext.pages.length;
+    const price = 500 + 50 * (pagesCount - 1);
+
+    setCurrentStep(currentStep - 1);
+    onChange({
+      ...appContext,
+      pages: appContext.pages.filter((item, index) => index !== currentStep - 1),
+      price,
+    });
   }
 
   const nextPage = () => {
@@ -206,7 +221,12 @@ function StudioPage({ onChange }) {
                     onChange={(changedPage) => handlePageChange(changedPage)}
                   />
                 )}
-                <Button onClick={addPage}>Add page</Button>
+                <div className="buttons">
+                  <Button size="small" onClick={addPage}>Add page</Button>
+                  {currentStep > 0 && (
+                    <Button size="small" onClick={deletePage}>Delete page</Button>
+                  )}
+                </div>
               </Form>
             </div>
           </div>
