@@ -1,8 +1,11 @@
-import { useRef } from 'react';
+import {useContext, useRef} from 'react';
 import  CustomTextInput from '../../components/description-event/DescriptionPhoto';
 import './InnerPagePreview.css';
+import AppContext from "../../AppContext";
 
 function InnerPagePreview({ page, onChange }) {
+  const appContext = useContext(AppContext);
+
   const refs = [
     useRef(),
     useRef(),
@@ -38,7 +41,7 @@ function InnerPagePreview({ page, onChange }) {
 
   return (
     <div
-      className="inner-page"
+      className={`inner-page ${appContext.size === '6' ? 'square' : ''}`}
       style={{
         backgroundColor: page.backgroundColor,
         color: page.textColor,

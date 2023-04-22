@@ -1,5 +1,6 @@
 import { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
+import localforage from "localforage";
 import Form from 'react-bootstrap/Form';
 import Button from '../../components/button/Button';
 // import Button from 'react-bootstrap/Button';
@@ -35,7 +36,7 @@ function CheckoutPage() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    localStorage.removeItem('appContext');
+    localforage.removeItem('appContext');
     window.location.href = '/order-confirmation';
   }
 

@@ -27,7 +27,14 @@ function StudioPage({ onChange }) {
   const [currentStep, setCurrentStep] = useState(0);
   const [isDark, setIsDark] = useState(false);
 
-  const handleChange = (field, value) => {
+  const handleBookChange = (field, value) => {
+    onChange({
+      ...appContext,
+      [field]: value,
+    });
+  };
+
+  const handleCoverChange = (field, value) => {
     onChange({
       ...appContext,
       cover: {
@@ -103,7 +110,7 @@ function StudioPage({ onChange }) {
                 </button>
                 {currentStep === 0 && (
                   <div
-                    className={`cover-page ${isDark ? 'dark' : ''}`}
+                    className={`cover-page ${isDark ? 'dark' : ''} ${appContext.size === '6' ? 'square' : ''}`}
                     style={{
                       backgroundColor: appContext.cover.backgroundColor,
                       color: appContext.cover.textColor,
@@ -139,7 +146,7 @@ function StudioPage({ onChange }) {
                         type="text"
                         placeholder="Title"
                         value={appContext.cover.title}
-                        onChange={(event) => handleChange('title', event.target.value)}
+                        onChange={(event) => handleCoverChange('title', event.target.value)}
                       />
                     </Form.Group>
 
@@ -149,7 +156,7 @@ function StudioPage({ onChange }) {
                         type="text"
                         placeholder="Subtitle"
                         value={appContext.cover.subtitle}
-                        onChange={(event) => handleChange('subtitle', event.target.value)}
+                        onChange={(event) => handleCoverChange('subtitle', event.target.value)}
                       />
                     </Form.Group>
 
@@ -159,7 +166,7 @@ function StudioPage({ onChange }) {
                         type="color"
                         placeholder="Background color"
                         value={appContext.cover.backgroundColor}
-                        onChange={(event) => handleChange('backgroundColor', event.target.value)}
+                        onChange={(event) => handleCoverChange('backgroundColor', event.target.value)}
                       />
                     </Form.Group>
 
@@ -169,7 +176,7 @@ function StudioPage({ onChange }) {
                         type="color"
                         placeholder="Text color"
                         value={appContext.cover.textColor}
-                        onChange={(event) => handleChange('textColor', event.target.value)}
+                        onChange={(event) => handleCoverChange('textColor', event.target.value)}
                       />
                     </Form.Group>
 
@@ -177,17 +184,18 @@ function StudioPage({ onChange }) {
                       <Form.Label className="size-title">Size</Form.Label>
                       <Form.Select
                         aria-label="Default select example"
-                        value={appContext.cover.size}
-                        onChange={(event) => handleChange('size', event.target.value)}
+                        value={appContext.size}
+                        onChange={(event) => handleBookChange('size', event.target.value)}
                       >
                         <option>Open this select menu</option>
                         <option value="1">9×13</option>
                         <option value="2">10х15 (A6)</option>
                         <option value="3">13×18</option>
-                        <option value="3">15×21 (A5)</option>
-                        <option value="3">20×30 (A4)</option>
-                        <option value="3">30×40</option>
-                        <option value="3">30×45 (A3)</option>
+                        <option value="4">15×21 (A5)</option>
+                        <option value="5">20×30 (A4)</option>
+                        <option value="6">30×30</option>
+                        <option value="7">30×40</option>
+                        <option value="8">30×45 (A3)</option>
                       </Form.Select>
                     </Form.Group>
                   </>

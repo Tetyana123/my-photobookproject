@@ -26,6 +26,10 @@
     text-align: center;
 }
 
+.description-textarea:focus-visible {
+    outline: 2px solid var(--primary-color);
+}
+
 .description-textarea:hover {
     background-color: #F4F5F6;
     box-shadow: 0 0 0 1px #F4F5F6;
@@ -41,5 +45,8 @@
 }
 
 .description-text {
+    font-size: 11px;
+    line-height: 12px;
     margin: 0;
+    white-space: pre-wrap;
 }

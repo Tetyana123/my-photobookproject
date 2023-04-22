@@ -1,6 +1,6 @@
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
-import LinkButton from '../link-button/LinkButton';
+// import LinkButton from '../link-button/LinkButton';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './HeaderMenu.css';

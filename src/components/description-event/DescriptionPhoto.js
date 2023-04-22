@@ -19,6 +19,7 @@ function CustomTextInput({ value, onChange }) {
             className="description-textarea"
             value={value || 'Hi, you can add your comments here!'}
             onBlur={() => setIsEditing(false)}
+            onKeyDown={(event) => { event.key === "Escape" && setIsEditing(false) }}
             onChange={(event) => onChange(event.target.value)}
           />
         )}

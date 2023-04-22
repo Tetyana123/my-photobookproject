@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import localforage from "localforage";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import MainPage from './pages/main/MainPage';
@@ -10,21 +11,28 @@ import AppContext from "./AppContext";
 // import Register from './pages/Register';
 
 function App() {
-  const defaultContext = JSON.parse(localStorage.getItem('appContext')) || {
+  const [ appContext, setAppContext ] = useState({
     cover: {
       title: '',
       subtitle: '',
       backgroundColor: '#ffffff',
       textColor: '#000000',
-      size: '',
     },
     pages: [],
-  };
+    size: '5',
+  });
 
-  const [ appContext, setAppContext ] = useState(defaultContext);
+  useEffect( () => {
+    localforage.getItem('appContext')
+      .then((previousContext) => {
+        if (previousContext) {
+          setAppContext(JSON.parse(previousContext));
+        }
+      });
+  }, []);
 
   useEffect(() => {
-    localStorage.setItem('appContext', JSON.stringify(appContext));
+    localforage.setItem('appContext', JSON.stringify(appContext));
   }, [appContext]);
 
   const router = createBrowserRouter([
@@ -44,13 +52,6 @@ function App() {
       path: "/order-confirmation",
       element: <CompletePage />,
     },
-
-    // {
-    //   path: "/Register",
-    //   element: <Register />,
-    // },
-
-
   ]);
 
   return (

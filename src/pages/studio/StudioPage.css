@@ -138,6 +138,10 @@
   background: linear-gradient(to left, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
 }
 
+.cover-page.square {
+  aspect-ratio: 1 / 1;
+}
+
 .cover-title {
   font-weight: 600;
   font-size: 30px;
